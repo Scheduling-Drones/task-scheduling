@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./commen.css">
+    <style>
+        .body{
+            width: 90%;
+            margin: 5%;
+        }
+        .require{
+            width: 70%;
+            border-radius: 20px;
+            padding: 10% 0px;
+            padding-left: 5% !important;
+            margin: 5% 15%;
+            background-image: linear-gradient(to bottom,#85EF47,white);
+        }
+        .email{
+            width: 100%;
+            margin: 5% 0px;
+            flex-direction: row;
+        }
+        .require label{
+            width: 80%;
+            margin: 0px 10%;
+        }
+        .require input{
+            border-radius: 5px;
+            width: 60%;
+            margin: 1% 20%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        .text input{
+            height: 200px !important;
+        }
+        .text{
+            width: 100%;
+        }
+        .body p{
+            margin-top: 1%;
+            font-size:20px ;
+        }
+        .body p span{
+            margin-left: 7%;
+        }
+        .body div button{
+            margin-left: 60%;
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 2px 15px;
+        }
+        @media screen and (max-width:700px) {
+        .text input{
+            height: 100px;
+        }
+        .require input{
+            border-radius: 5px;
+            width: 80%;
+            margin: 1% 10%;
+            height: 20px;
+            padding-left: 5px;
+            font-size: 12px;
+        }
+        .body div button{
+            margin-left: 50%;
+            font-size: 13px;
+            border-radius: 5px;
+            padding: 2px 7px;
+        }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container" >
+        <div class="left-container">
+            <h1>logo</h1>
+            <img id="avatar" src="./Avatar.png" alt="">
+            <p id="username">Avator</p>
+            <div class="menu">
+                <a href="./index.html" ><button id="home">Home</button></a>
+                <a href="./projects.html" ><button id="projects">Projects</button></a>
+                <a href="./works.html" ><button id="works">works</button></a>
+                <a href="./about.html" ><button id="about">About us</button></a>
+                <a href="./contact.html" ><button id="conntact">contact</button></a>
+            </div>
+        </div>
+        <div class="right-containes">
+            <div class="header">
+                <div class="sreach-bar">
+                    <div >
+                        <img id="menu-icon" src="./menu.png" alt="menu" 
+                        onclick="togglemenu()" >
+                    </div>
+                    <input id="sreach-bar" type="search"  placeholder="search" required style="outline: none; outline-style: none;">
+                    <a id="log-out" href="./log-out.html"><button>log out</button></a>
+                </div>
+            </div>
+            <div id="menuList">
+                <h2>logo</h2>
+                <img id="avatar" src="./Avatar.png" alt="">
+                <p id="username">Avator</p>
+                <div class="menu">
+                    <a href="./index.html" ><button id="home">Home</button></a>
+                    <a href="./projects.html" ><button id="projects">Projects</button></a>
+                    <a href="./works.html" ><button id="works">works</button></a>
+                    <a href="./about.html" ><button id="about">About us</button></a>
+                    <a href="./contact.html" ><button id="conntact">contact</button></a>
+                </div>
+            </div>
+            <div class="body" onclick="retogglemenu(menuList)">
+                <h2>Contact us</h2>
+                <p>
+                    <span>Say</span> your feed backs and some queries about this website.
+                </p>
+                <div class="require">
+                    <div class="email">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id= "email" placeholder="xyz@mail.com">
+                    </div>
+                    <div class="text">
+                        <label for="text">queries</label>
+                        <input type="tel" name="text" id="text" placeholder="Write here your queries and feed backs.">
+                    </div>
+                    <div>
+                        <button>submit</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="col1">
+                    <p>SCHEDULING DRONES © 2021 ALL Rights Reserved</p>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><img src="./icons8-facebook-64.png" alt=""></li>
+                        <li><img src="./icons8-instagram-64.png" alt=""></li>
+                        <li><img src="./icons8-twitter-circled-64.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight ="0vh";
+        menuList.style.maxWidth ="0vw";
+        function togglemenu(){
+            if (menuList.style.maxHeight =="0vh"){
+                menuList.style.maxHeight ="60vh"
+                menuList.style.maxWidth ="180px"
+            }
+            else{
+                menuList.style.maxHeight ="0vh"
+                menuList.style.maxWidth ="0vw"
+            }
+        }
+        function retogglemenu(){
+            if (menuList.style.maxHeight ="60vh"){
+                menuList.style.maxHeight ="0vh"
+                menuList.style.maxWidth ="0vw"
+            }
+        }
+    </script>
+</body>
+</html>
