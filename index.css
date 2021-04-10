@@ -75,6 +75,7 @@
     margin-top: 2%;
     margin-bottom: 1%;
     font-family:"Source Sans Pro";
+    font-size: 35px;
 }
 .body-content i{
     font-family: "Source Serif Pro";
@@ -82,6 +83,9 @@
 }
 .body-content p{
     font-family: "Source Sans Pro";
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height:1.5;
 }
 .body-content p span{
     margin-left: 8%;
