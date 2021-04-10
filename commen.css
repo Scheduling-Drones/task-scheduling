@@ -257,6 +257,7 @@
         width: 0px;
     }
 }
+
 @media screen and (max-width:800px) {
     .left-container{
         width: 25%;
